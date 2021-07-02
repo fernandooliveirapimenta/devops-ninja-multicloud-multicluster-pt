@@ -19,7 +19,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host: traefik.multicloud.ml
+  - host: traefik.losangelesops-dev.ml
     http:
       paths:
       - path: /

@@ -26,7 +26,7 @@ $ gcloud compute instance-templates create multicloud \
    --image-family=debian-9 \
    --image-project=debian-cloud \
    --machine-type=e2-medium \
-   --metadata-from-file startup-script=install-k8s2.sh
+   --metadata-from-file startup-script=install-k8s.sh
 
 # Create the managed instance group based on the template.
 $ gcloud compute instance-groups managed create multicloud-backend \
@@ -73,8 +73,9 @@ $ kubectl apply -f traefik.yaml
 
 # 4 -  Criação do certificado não válido
 
+*.losangelesops-dev.ml
 ```sh
-> openssl req -new -x509 -keyout cert.pem -out cert.pem -days 365 -nodes
+> openssl req -new -x509 -keyout cert.pem -out cert.pem -days 50000 -nodes
 Country Name (2 letter code) [AU]:DE
 State or Province Name (full name) [Some-State]:Germany
 Locality Name (eg, city) []:nameOfYourCity
@@ -122,7 +123,7 @@ $ gcloud compute addresses describe lb-ipv4-1 \
     --format="get(address)" \
     --global
 
-#  34.96.99.180
+#  34.149.203.45
 
 # SETUP
 
