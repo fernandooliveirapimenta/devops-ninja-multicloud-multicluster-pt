@@ -1,6 +1,6 @@
 data:
   api.js: |
-    var api  = "https://api.multicloud.ml";
+    var api  = "https://api.losangelesops-dev.ml";
     var VideoPath = "/video";
     var SongPath  = "/song";
     var BookPath  = "/book";

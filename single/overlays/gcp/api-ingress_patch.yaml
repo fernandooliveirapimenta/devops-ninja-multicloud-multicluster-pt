@@ -1,6 +1,6 @@
 spec:
   rules:
-    - host: api.multicloud.ml
+    - host: api.losangelesops-dev.ml
       http:
         paths:
           - path: /book

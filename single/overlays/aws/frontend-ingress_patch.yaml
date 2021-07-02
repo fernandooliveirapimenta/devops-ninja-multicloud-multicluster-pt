@@ -1,6 +1,6 @@
 spec:
   rules:
-    - host: app.devops-ninja.ml
+    - host: app.losangelesops.ml
       http:
         paths:
           - backend:
