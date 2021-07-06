@@ -4,7 +4,7 @@ var pg = require('pg');
 
 var config = {
     user: 'root',
-    host: '10.142.0.21',
+    host: 'cockroachdb-5385daf5e21ac419.elb.us-east-2.amazonaws.com',
     database: 'books',
     port: 26257
 };

@@ -1,4 +1,4 @@
 #!/bin/bash
 curl https://releases.rancher.com/install-docker/19.03.sh | sh
 apt install -y open-iscsi
-docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.5.8 --server https://18.116.67.159 --token xl95r8k6psbn47s4lmnkpr79dlsdbtf88fzs4txzx52kb6xrfphn55 --ca-checksum 0bb5e3982246774d5a30de589ee9a9e25c02d5719995eb57787a447970c6c740 --etcd --controlplane --worker
+docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.5.8 --server https://3.142.194.218 --token t2wjqgm7vh98z8jpnxpgrzh6ds7bhvggk7b8s7rvg5gv8trjn2xhd9 --ca-checksum 18d436217e8d87d19667aaeb26a7fe02ca716c4b00ab370b62e853765d9217db --etcd --controlplane --worker

@@ -28,13 +28,17 @@ $ gcloud compute instance-groups managed create cockroachdb \
 
 ```sh
 
+AWS 18.216.161.12
+AWS 18.117.161.87
 
-GCP 34.74.83.107
-GCP 35.231.230.170
+GCP 34.139.238.81
+GCP 34.73.20.111
 
-cockroach start --insecure --advertise-addr=34.74.83.107 --join=3.16.216.254,3.143.245.211,34.74.83.107,35.231.230.170 --cache=.25 --max-sql-memory=.25  --background
 
-cockroach start --insecure --advertise-addr=35.231.230.170 --join=3.16.216.254,3.143.245.211,34.74.83.107,35.231.230.170 --cache=.25 --max-sql-memory=.25  --background
+
+cockroach start --insecure --advertise-addr=34.139.238.81 --join=18.216.161.12,18.117.161.87,34.139.238.81,34.73.20.111 --cache=.25 --max-sql-memory=.25  --background
+
+cockroach start --insecure --advertise-addr=34.73.20.111 --join=18.216.161.12,18.117.161.87,34.139.238.81,34.73.20.111 --cache=.25 --max-sql-memory=.25  --background
 
 
 
